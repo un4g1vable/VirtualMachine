@@ -56,14 +56,6 @@ while (flag)
 			ip = parseInt(mem[ip + 1])
 			break;
 
-		case 'compare':
-			if (mem[mem[ip + 1]] != mem[mem[ip + 2]])
-				mem[mem[ip + 3]] = 0;
-			else
-				mem[mem[ip + 3]] = 1;
-			ip += 4;
-			break;
-
 		case 'exit':
 			flag = false;
 	}
